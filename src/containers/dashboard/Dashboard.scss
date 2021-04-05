@@ -1,0 +1,204 @@
+.container-dashboard{
+    .form-note{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        min-height: 225px;
+        .title-dashboard{
+            margin: 0px;
+            color: rgb(180, 147, 40);
+        }
+        .empty-form-dashboard-error{
+            background: red;
+            margin: 10px 0px;
+            font-style: italic;
+            color: white;
+            padding: 4px 20px;
+            width: 400px;
+            border-radius: 10px;
+            font-weight: 700;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            .message-error{
+                margin: 0px; 
+            }
+            .close-button{
+                position: absolute;
+                width: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 20px;
+                font-style: italic;
+                right: 10px;
+                top: 5px;
+                &:hover{
+                    cursor: pointer;
+                    color: white;
+                }
+            }
+        }
+        .add-form-dashboard-success{
+            background: rgb(36, 182, 36);
+            margin: 10px 0px;
+            font-style: italic;
+            color: white;
+            padding: 4px 20px;
+            width: 400px;
+            border-radius: 10px;
+            font-weight: 700;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            .message-success{
+                margin: 0px; 
+            }
+            .close-button{
+                position: absolute;
+                width: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 20px;
+                font-style: italic;
+                right: 10px;
+                top: 5px;
+                &:hover{
+                    cursor: pointer;
+                    color: white;
+                }
+            }
+        }
+        .title{
+            min-width: 400px;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid rgb(192, 180, 125);
+            outline: none;
+            border-radius: 10px;
+            display: flex;
+            min-height: 35px;
+            align-items: center;
+            box-sizing: border-box;
+            color: rgb(143, 131, 79);
+            &:focus{
+                border: 2px solid greenyellow;
+            }
+        }
+        .content{
+            min-width: 400px;
+            padding: 8px;
+            border: 1px solid rgb(192, 180, 125);
+            border-radius: 10px;
+            margin-bottom: 10px;
+            color: rgb(143, 131, 79);
+            outline: none;
+            height: 150px;
+            box-sizing: border-box;
+            &:focus{
+                border: 2px solid greenyellow;
+            }
+        }
+        button.btn-add{
+            border-radius: 10px;
+            width: 150px;
+            height: 30px;
+            outline: none;
+            border: 1px solid rgba(0, 0, 0, .4);
+            background: white;
+            color: rgb(143, 131, 79);
+            &:hover{
+                cursor: pointer;
+                background: rgb(192, 180, 125);
+                color: white;
+                border: 1px solid rgb(192, 180, 125);
+                &:active{
+                    transform: translateY(1px);
+                }
+            }
+            &:focus{
+                cursor: pointer;
+                background: rgb(192, 180, 125);
+                color: white;
+                border: 1px solid rgb(192, 180, 125);
+                &:active{
+                    transform: translateY(1px);
+                }
+            }
+        }
+        .btn-update{
+            width: 400px;
+            display: flex;
+            justify-content: space-around;
+            .cancel-update{
+                width: 100px;
+                height: 35px;
+                background: white;
+                border: 1px solid red;
+                border-radius: 10px;
+                color: red;
+                outline: none;
+                &:hover{
+                    cursor: pointer;
+                    background: red;
+                    color: white;
+                    &:active{
+                        transform: translateY(1px);
+                    }
+                }
+            }
+            .save-update{
+                width: 100px;
+                height: 35px;
+                background: white;
+                border: 1px solid rgb(43, 185, 43);
+                border-radius: 10px;
+                color: rgb(43, 185, 43);
+                outline: none;
+                &:hover{
+                    cursor: pointer;
+                    background: rgb(43, 185, 43);
+                    color: white;
+                    &:active{
+                        transform: translateY(1px);
+                    }
+                }
+            }
+        }
+    }
+    .list-notes{
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        margin: 20px;
+        padding: 10px;
+        box-sizing: border-box;
+        position: relative;
+        transition: ease .2s;
+
+        &:hover{
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, .4);
+            cursor: pointer;
+            transform: translateY(-3px);
+            background: rgba(59, 59, 59, 0.219);
+        }
+        .btn-delete{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+            color: white;
+            position: absolute;
+            background: red;
+            width: 30px;
+            height: 30px;
+            font-size: 15px;
+            top: -10px;
+            right: -5px;
+        }
+    }
+}
